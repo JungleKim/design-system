@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "@ridi",
+    "plugin:prettier/recommended"
+  ]
+}
