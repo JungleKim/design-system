@@ -1,4 +1,5 @@
 {
+  "name": "@ridi/design-system",
   "private": true,
   "scripts": {
     "build": "gatsby build",
