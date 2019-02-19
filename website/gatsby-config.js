@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/design-system`,
   siteMetadata: {
     title: `RIDI Design System`,
   },
