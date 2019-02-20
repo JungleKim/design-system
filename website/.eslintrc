@@ -3,6 +3,13 @@
     "@ridi",
     "plugin:prettier/recommended"
   ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
   "rules": {
     "react/forbid-prop-types": 0,
     "react/jsx-one-expression-per-line": 0,
