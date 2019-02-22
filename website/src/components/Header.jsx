@@ -1,9 +1,10 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import colors from '@ridi/colors';
 import ImageText from './ImageText';
+import MenuButton from './MenuButton';
 import ridiDesignSystemImage from '../images/ridi-design-system.svg';
 import betaImage from '../images/beta.png';
 
@@ -35,27 +36,39 @@ const TitleLink = styled(Link)`
   }
 `;
 
-const Header = ({ siteTitle = '', ...restProps }) => (
-  <Wrapper {...restProps}>
-    <Container css={{ height: '100%' }}>
-      <Title css={{ height: '100%' }}>
-        <TitleLink css={{ height: '100%' }} to="/">
-          <ImageText
-            width={166}
-            height={18}
-            src={ridiDesignSystemImage}
-            css={{ marginRight: 10 }}
-          >
-            {siteTitle}
-          </ImageText>
-          <ImageText width={45} height={24} src={betaImage}>
-            BETA
-          </ImageText>
-        </TitleLink>
-      </Title>
-    </Container>
-  </Wrapper>
-);
+const Header = ({ siteTitle = '', ...restProps }) => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!isMenuOpen);
+
+  return (
+    <Wrapper {...restProps}>
+      <Container css={{ height: '100%' }}>
+        <Title css={{ height: '100%' }}>
+          <TitleLink css={{ height: '100%' }} to="/">
+            <ImageText
+              width={166}
+              height={18}
+              src={ridiDesignSystemImage}
+              css={{ marginRight: 10 }}
+            >
+              {siteTitle}
+            </ImageText>
+            <ImageText width={45} height={24} src={betaImage}>
+              BETA
+            </ImageText>
+          </TitleLink>
+        </Title>
+
+        <MenuButton
+          css={{ height: '100%' }}
+          isPressed={isMenuOpen}
+          onClick={toggleMenu}
+        />
+      </Container>
+    </Wrapper>
+  );
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
