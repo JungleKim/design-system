@@ -929,6 +929,11 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
+"@ridi/colors@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@ridi/colors/-/colors-0.3.0.tgz#ce105915ecdd76908eeb12dcb29922609ecd6d44"
+  integrity sha512-1hZE3YJ+zPmpmg9C3rddmp86zF+FPkyCWUgISZBF/4ATLxCqZkN7jH/73sEM69GZPnV4Eyfdm+HyV9GlElennQ==
+
 "@ridi/eslint-config@^4.1.1":
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/@ridi/eslint-config/-/eslint-config-4.1.1.tgz#2c6d7f88bfa2f527c54ea1cbcbf5bbb8d92668cd"
@@ -10140,6 +10145,11 @@ requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
+
+reset-css@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/reset-css/-/reset-css-4.0.1.tgz#1f8456a8be478bc435ce9775b7878ec82cca6b05"
+  integrity sha512-aQFi5IxXVegVTfz0hOmXsPSmc8tlPDQOkfatHfPu3Cm6id7UXM4OzXfsaUWJEgV2yrCngsagpIb3wHXPjKAx+Q==
 
 resolve-cwd@^2.0.0:
   version "2.0.0"
