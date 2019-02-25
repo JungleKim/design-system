@@ -48,7 +48,7 @@ const Header = ({ siteTitle = '', ...restProps }) => {
           <TitleLink css={{ height: '100%' }} to="/">
             <ImageText
               width={166}
-              height={18}
+              height={20}
               src={ridiDesignSystemImage}
               css={{ marginRight: 10 }}
             >
